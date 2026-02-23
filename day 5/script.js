@@ -77,3 +77,36 @@ else if (number%5 ==0){
 } else{
     console.log(number);
 }
+
+// switch case statement // it uses triple equal to operator (===) for comparison
+
+// switch(expression){
+//     case value1:
+//         // code to be executed if expression === value1
+//         break;
+//     case value2:
+//         // code to be executed if expression === value2
+//         break;
+//     ...
+//     default:
+//         // code to be executed if expression doesn't match any case
+// }
+
+
+let day = 7;
+switch (day) {
+
+}
+
+
+// truthly values and falsy values
+// truthly values are values that are considered true in a boolean context
+// falsy values are values that are considered false in a boolean context
+
+// falsy values in javascript are
+// 1. false
+// 2. 0
+// 3. "" (empty string)
+// 4. null
+// 5. undefined
+// 6. NaN
