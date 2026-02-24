@@ -37,7 +37,7 @@
 
 
 // given number check if it is prime or not if it prime thrn print given number is prime  if it not then print given number is not prime
-let number=13;
+let number=9;
    if( number%2!=0 && number%3!=0 && number%5!=0 && number!=1){  
          console.log(number + " is a prime number");
         }
@@ -52,36 +52,36 @@ let number=13;
      // OR
 
 
-// let num=3;
+let num=3;
 
-// for(let i=2; i<num; i++){   //
-//     if(num%i==0){
-//         isPrime=false;
-//         break;
-//     }
-// }
-//     console.log(num + " is a prime number");
+for(let i=2; i<num; i++){   //
+    if(num%i==0){
+        isPrime=false;
+        break;
+    }
+}
+    console.log(num + " is a prime number");
 
 
 // for loop when use when you know the number of iterations you want to perform. 
 // while loop when you don't know the number of iterations you want to perform.
 // do while loop when you want to execute a block of code at least once, and then repeat it as long as a specified condition is true.
 
-// // while loop
-// let count=1;
-// while(count<=10){
-//     console.log(count);
-//     count++;
-// }
+// while loop
+let count=1;
+while(count<=10){
+    console.log(count);
+    count++;
+}
 
-// // do while loop
-// let i=1;
-// do{
-//       console.log(i);
-//       i++;
-// }while(false){
-//    console.log("hii");
-// }
+// do while loop
+let i=1;
+do{
+      console.log(i);
+      i++;
+}while(false){
+   console.log("hii");
+}
 
 
 
