@@ -6,6 +6,9 @@
 // console.log(sum);
 
 
+
+
+
 // // even or odd
 // let num= 5;
 // if(num % 2 === 0){
@@ -14,6 +17,9 @@
 // else{
 //     console.log("odd");
 // }
+
+
+
 
 
 // // largest of three numbers
@@ -33,14 +39,14 @@
 // }
 
 
+
+
 //simple calculater
 
 
 // let num1 = 4;
 // let operator = "+";
 // let num2 = 3;
-
-// let result;
 
 // if (operator === "+") {
 //    console.log(num1 + num2);
@@ -58,6 +64,11 @@
 //   console.log("Invalid operator");
 // }
 
+
+
+
+
+
 // print number 1-10 by using loop
 
 // by for loop
@@ -73,6 +84,9 @@
 //    num++
 
 // }
+
+
+
 
 
 //multiplication table
@@ -160,14 +174,35 @@
 //Sum of Array Elements
 
 
-let num = [1, 2];
-let sum = 0;
+// let num = [1, 2, 3, 4, 5];
+// let sum = 0;
 
-for(let i=0 ; i<num.length ; i++){
-    sum += num.length;
-   console.log( sum);
-}
+// for(let i=0 ; i<num.length ; i++){
+//     sum += num[i];
+   
+// }
+
+// console.log( sum);
  
+// let name = prompt("what is your name ?");
+// console.log("Hello," + name + "!");
+
+
+
+
+
+
+
+  
+
+
+
+ 
+    
+
+
+
+
 
 
 
