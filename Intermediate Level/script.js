@@ -108,4 +108,91 @@
 
 
 
+// 2nd largest number in an array
+
+
+// function secondLargest(arr){
+//     let unique = [...new Set(arr)]; // for remove duplicate value
+//     unique.sort((a, b) => b - a); // sort descending
+//     return unique.length >= 2 ? unique[1] : null;
+
+// }
+// console.log(secondLargest([4, 1, 9, 3, 7]));
+
+
+
+// short number
+
+// let num = [8, 2, 4, 1]
+
+// console.log(num.sort((a, b) => a-b ));
+
+
+
+
+//Palindrome Checker
+
+// function palindromeChecker(str){
+//     let sum = "";
+//     for(let i=str.length-1; i>=0; i--){
+        
+//         sum+=str[i];
+//     }
+
+//     if(sum === str){
+//   console.log("true");
+  
+//      }
+// else{
+//    console.log("false");
+
+// }
+    
+// }
+//  palindromeChecker("rani");
+
+//  palindromeChecker("ihi");
+
+
+ // or 
+
+//  function palindromeChecker(str) {
+//     let reversed = "";
+
+//     for (let i = str.length - 1; i >= 0; i--) {
+//         reversed += str[i];
+//     }
+
+//     return reversed === str;
+// }
+
+// console.log(palindromeChecker("rani"));
+// console.log(palindromeChecker("madam"));
+
+
+// //Filter Even Numbers from an Array
+
+// function filterEvenNumbers(arr) {
+//     return arr.filter(num => num % 2 === 0);
+// }
+
+// console.log(filterEvenNumbers([1, 2, 3, 4, 5, 6]));
+
+
+
+
+function filterEvenNumbers(arr) {
+    return arr.filter(num => num % 2 === 0);
+}
+
+console.log(filterEvenNumbers([1, 2, 3, 4, 5, 6]));
+
+
+
+
+
+
+
+
+
 
