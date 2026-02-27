@@ -181,11 +181,22 @@
 
 
 
-function filterEvenNumbers(arr) {
-    return arr.filter(num => num % 2 === 0);
+// check palindrome
+
+function chickPalindorme(){
+    let str = prompt("Enteer a string");
+    let sum = "";
+    for(i = str.length - 1; i >=0; i--){
+        sum += str[i]; 
+    }
+     if(sum == str){
+        alert("true");
+      }else{
+        alert("false");
+      }
+      
 }
 
-console.log(filterEvenNumbers([1, 2, 3, 4, 5, 6]));
 
 
 
