@@ -197,19 +197,19 @@ console.log(filterEvenNumbers([1, 2, 3, 4, 5, 6]));
 
 // check palindrome
 
-// function chickPalindorme(){
-//     let str = prompt("Enteer a string");
-//     let sum = "";
-//     for(i = str.length - 1; i >=0; i--){
-//         sum += str[i]; 
-//     }
-//      if(sum == str){
-//         alert("true");
-//       }else{
-//         alert("false");
-//       }
+function chickPalindorme(){
+    let str = prompt("Enteer a string");
+    let sum = "";
+    for(i = str.length - 1; i >=0; i--){
+        sum += str[i]; 
+    }
+     if(sum == str){
+        alert("true");
+      }else{
+        alert("false");
+      }
       
-// }
+}
 
 
 
