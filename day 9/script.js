@@ -76,6 +76,8 @@ function addSum(num){
  console.log(mul);
  
 
+ 
+
 
 
 

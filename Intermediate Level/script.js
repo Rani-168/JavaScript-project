@@ -76,7 +76,15 @@
 // }
 // console.log(sum);
 
-
+// function sumOfDigit(){
+//     let num = prompt("enter a number");
+//     let sum =0 ;
+//     while(num >0){
+//         sum += num%10;
+//         num = Math.floor(num/10);
+//     }
+//     alert(sum);
+// }
 
 // //Vowel Counter
 
@@ -84,7 +92,7 @@
 // let sum = 0;
 // for(let i = 0; i<str.length; i++){
 //     if(str[i]==="a" || str[i]==="e" || str[i]==="i" || str[i]==="o" ||str[i]==="u" || str[i]==="A" || str[i]==="E" || str[i]==="I" || str[i]==="O" ||str[i]==="U" ){
-//       sum +=1;
+//       sum ++;
       
 //     }
 // }
@@ -99,7 +107,7 @@
 
 // for(let i=0; i<text.length; i++){
 //     if(Vowel.includes(text[i])){
-//         count += 1;
+//         count ++;
 
 //     }
 // }
@@ -111,13 +119,13 @@
 // 2nd largest number in an array
 
 
-// function secondLargest(arr){
-//     let unique = [...new Set(arr)]; // for remove duplicate value
-//     unique.sort((a, b) => b - a); // sort descending
-//     return unique.length >= 2 ? unique[1] : null;
+function secondLargest(arr){
+    let unique = [...new Set(arr)]; // for remove duplicate value
+    let sum = unique.sort((a, b) => b - a); // sort descending
+    return sum[1];
 
-// }
-// console.log(secondLargest([4, 1, 9, 3, 7]));
+}
+console.log(secondLargest([10, 2, 20, 4]));
 
 
 
@@ -170,32 +178,38 @@
 // console.log(palindromeChecker("madam"));
 
 
+
 // //Filter Even Numbers from an Array
 
-// function filterEvenNumbers(arr) {
-//     return arr.filter(num => num % 2 === 0);
-// }
+function filterEvenNumbers(arr) {
+    return arr.filter(num => num % 2 === 0);
+}
 
-// console.log(filterEvenNumbers([1, 2, 3, 4, 5, 6]));
+console.log(filterEvenNumbers([1, 2, 3, 4, 5, 6]));
+
+
+
+
+
 
 
 
 
 // check palindrome
 
-function chickPalindorme(){
-    let str = prompt("Enteer a string");
-    let sum = "";
-    for(i = str.length - 1; i >=0; i--){
-        sum += str[i]; 
-    }
-     if(sum == str){
-        alert("true");
-      }else{
-        alert("false");
-      }
+// function chickPalindorme(){
+//     let str = prompt("Enteer a string");
+//     let sum = "";
+//     for(i = str.length - 1; i >=0; i--){
+//         sum += str[i]; 
+//     }
+//      if(sum == str){
+//         alert("true");
+//       }else{
+//         alert("false");
+//       }
       
-}
+// }
 
 
 
