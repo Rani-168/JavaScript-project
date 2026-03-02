@@ -76,16 +76,19 @@
 
 function secondlargest(num){
     let largest = num[0];
+    let secound = null;
     for(let i = 1 ; i<=num.length; i++ ){
+          
         if(num[i] > largest){
+           secound = largest;
             largest = num[i];
      
         }
       
     }
 
-    return largest;
-      
+    
+    return secound;  
 
 }
 

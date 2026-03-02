@@ -119,13 +119,13 @@
 // 2nd largest number in an array
 
 
-function secondLargest(arr){
-    let unique = [...new Set(arr)]; // for remove duplicate value
-    let sum = unique.sort((a, b) => b - a); // sort descending
-    return sum[1];
+// function secondLargest(arr){
+//     let unique = [...new Set(arr)]; // for remove duplicate value
+//     let sum = unique.sort((a, b) => b - a); // sort descending
+//     return sum[1];
 
-}
-console.log(secondLargest([10, 2, 20, 4]));
+// }
+// console.log(secondLargest([10, 2, 20, 4]));
 
 
 
@@ -181,36 +181,56 @@ console.log(secondLargest([10, 2, 20, 4]));
 
 // //Filter Even Numbers from an Array
 
-function filterEvenNumbers(arr) {
-    return arr.filter(num => num % 2 === 0);
-}
+// function filterEvenNumbers(arr) {
+//     return arr.filter(num => num % 2 === 0);
+// }
 
-console.log(filterEvenNumbers([1, 2, 3, 4, 5, 6]));
-
-
+// console.log(filterEvenNumbers([1, 2, 3, 4, 5, 6]));
 
 
+// function filterEvenNum(num){
+//     let sum = [];
+//     for(let i = 0; i<=num.length; i++){
+        
+//         if(num[i]%2===0){
+//             sum.push(num[i]);
+//         }
 
+//     }
+//     return sum;
+// }
 
+// console.log(filterEvenNum([1, 2, 4, 6, 5,8]));
 
 
 
 // check palindrome
 
-function chickPalindorme(){
-    let str = prompt("Enteer a string");
-    let sum = "";
-    for(i = str.length - 1; i >=0; i--){
-        sum += str[i]; 
-    }
-     if(sum == str){
-        alert("true");
-      }else{
-        alert("false");
-      }
+// function chickPalindorme(){
+//     let str = prompt("Enteer a string");
+//     let sum = "";
+//     for(i = str.length - 1; i >=0; i--){
+//         sum += str[i]; 
+//     }
+//      if(sum == str){
+//         alert("true");
+//       }else{
+//         alert("false");
+//       }
       
+// }
+
+
+// Power Calculation Without Math.pow
+
+
+
+function powerCalculation(base, Exponent){
+    return base**Exponent;
 }
 
+let num = powerCalculation(2, 3);
+console.log(num);
 
 
 
