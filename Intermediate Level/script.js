@@ -225,12 +225,30 @@
 
 
 
-function powerCalculation(base, Exponent){
-    return base**Exponent;
-}
+// function powerCalculation(base, Exponent){
+//     return base**Exponent;
+// }
 
-let num = powerCalculation(2, 3);
-console.log(num);
+// let num = powerCalculation(2, 3);
+// console.log(num);
+
+
+//Count Occurrences in an Array
+
+// function CountOccurrences(num){
+//     let sum = {};
+//     for(let i = 0; i<num.length ; i++){
+//           sum[num[i]]= (sum[num[i]] || 0) + 1 ;
+     
+//     }
+//     return sum;
+// } 
+
+// let sum = CountOccurrences([1, 2, 2, 3, 3, 3]);
+// console.log(sum);
+
+
+// Sum of Array Elements with For...of
 
 
 
