@@ -9,7 +9,5 @@ function chageDarkMode(){
    } else {
        icon.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStd2zLWAHSKoqvfQSkoaeiZUyMiHCGgaF5SA&s";  // light mode icon
    }
-    
-    
    
 }
