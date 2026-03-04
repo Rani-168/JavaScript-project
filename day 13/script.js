@@ -20,12 +20,29 @@
 //5.cterate and add element
 
 // how to create element:
-const para = document.createElement("p")//it only add in memory // it only create that element and return the created element
+// let para = document.createElement("p")//it only add in memory // it only create that element and return the created element
 
-para.innerText="rani";
+// function CreateAndAddElement(){
+//     const para = document.createElement("p")
+//     para.innerText="rani";
+    
+// // for add element:
+//  document.body.append(para);
 
-// for add element:
-parent.appendChild(para);
+// }
+
+function changeToImage1(){
+    document.getElementById("myImage").src = "https://images.pexels.com/photos/3797991/pexels-photo-3797991.jpeg?cs=srgb&dl=pexels-houzlook-3797991.jpg&fm=jpg";
+}
+function changeToImage2(){
+    document.getElementById("myImage").src = "https://c.ndtvimg.com/2021-04/tdh9mob8_home-decor-650_625x300_12_April_21.jpg";
+}
+
+function changeToImage3(){
+    document.getElementById("myImage").src = "https://bonito.in/wp-content/uploads/2021/10/Blog-Detail-01-1.jpg";
+}
+
+
 
 
 // create code button when we click on button dark with using css varibles
