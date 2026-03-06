@@ -39,20 +39,20 @@
 
 
 
-let images = [
-"https://picsum.photos/id/1015/300/200",
-"https://picsum.photos/id/1016/300/200",
-"https://picsum.photos/id/1018/300/200"
-];
+// let images = [
+// "https://picsum.photos/id/1015/300/200",
+// "https://picsum.photos/id/1016/300/200",
+// "https://picsum.photos/id/1018/300/200"
+// ];
 
-let gallery = document.getElementById("gallery");
+// let gallery = document.getElementById("gallery");
 
-images.forEach(function(url){
+// images.forEach(function(url){
 
-    let img = document.createElement("img");
+//     let img = document.createElement("img");
 
-    img.src = url;
+//     img.src = url;
 
-    gallery.appendChild(img);
+//     gallery.appendChild(img);
 
-});
+// });
