@@ -1,0 +1,38 @@
+// Dynamic Heading Creation
+
+// const ElH1 = document.createElement("h1");
+// ElH1.innerText = "Hello, world!"
+// document.body.appendChild(ElH1);
+
+
+// Generate Unordered List from an Array
+
+// let string = ["Apple", "Banana", "Cherry"];
+
+// const ul = document.createElement("ul");
+
+// for(let i= 0; i<=string.length-1; i++){
+//     const li = document.createElement("li");
+//      li.innerHTML = string[i];
+//     ul.appendChild(li);
+// }
+
+// document.body.appendChild(ul);
+
+
+//Button to Change Background Color
+
+const color = document.querySelector("button");
+color.onclick = changeColor;
+
+function changeColor(){
+    let red = Math.floor(Math.random() * 256);
+    let green = Math.floor(Math.random() * 256);
+    let blue = Math.floor(Math.random() * 256);
+
+    let backcolor = "rgb(" + red + "," + green + "," + blue + ")";
+
+    document.body.style.backgroundColor = backcolor;
+
+}
+
