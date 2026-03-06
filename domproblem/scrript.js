@@ -22,17 +22,37 @@
 
 //Button to Change Background Color
 
-const color = document.querySelector("button");
-color.onclick = changeColor;
+// const color = document.querySelector("button");
+// color.onclick = changeColor;
 
-function changeColor(){
-    let red = Math.floor(Math.random() * 256);
-    let green = Math.floor(Math.random() * 256);
-    let blue = Math.floor(Math.random() * 256);
+// function changeColor(){
+//     let red = Math.floor(Math.random() * 256);
+//     let green = Math.floor(Math.random() * 256);
+//     let blue = Math.floor(Math.random() * 256);
 
-    let backcolor = "rgb(" + red + "," + green + "," + blue + ")";
+//     let backcolor = "rgb(" + red + "," + green + "," + blue + ")";
 
-    document.body.style.backgroundColor = backcolor;
+//     document.body.style.backgroundColor = backcolor;
 
-}
+// }
 
+
+
+
+let images = [
+"https://picsum.photos/id/1015/300/200",
+"https://picsum.photos/id/1016/300/200",
+"https://picsum.photos/id/1018/300/200"
+];
+
+let gallery = document.getElementById("gallery");
+
+images.forEach(function(url){
+
+    let img = document.createElement("img");
+
+    img.src = url;
+
+    gallery.appendChild(img);
+
+});
