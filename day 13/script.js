@@ -20,16 +20,16 @@
 //5.cterate and add element
 
 // how to create element:
-// let para = document.createElement("p")//it only add in memory // it only create that element and return the created element
+let para = document.createElement("p")//it only add in memory // it only create that element and return the created element
 
-// function CreateAndAddElement(){
-//     const para = document.createElement("p")
-//     para.innerText="rani";
+function CreateAndAddElement(){
+    const para = document.createElement("p")
+    para.innerText="rani";
     
-// // for add element:
-//  document.body.append(para);
+// for add element:
+ document.body.append(para);
 
-// }
+}
 
 function changeToImage1(){
     document.getElementById("myImage").src = "https://images.pexels.com/photos/3797991/pexels-photo-3797991.jpeg?cs=srgb&dl=pexels-houzlook-3797991.jpg&fm=jpg";
