@@ -51,13 +51,13 @@ function captialised(string){
    
     let value = string[0].toUpperCase() 
     let sum =  string.slice(1);
-    let sum1= sum.toLowerCase()
+    let sum1= sum.toLowerCase();
     
     
     console.log(value + sum1);
 }
 
-captialised("RANI")
+captialised("RANI");
 
 
 
