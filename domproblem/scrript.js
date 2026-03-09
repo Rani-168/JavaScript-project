@@ -56,3 +56,41 @@
 //     gallery.appendChild(img);
 
 // });
+
+
+// const items = [
+//     { price: 10, quantity: 2 },
+//     { price: 5, quantity: 5 },
+//     { price: 8, quantity: 3 }
+// ];
+
+// const totals = items.map(item => item.price * item.quantity);
+
+// console.log(totals);
+
+
+
+//for each  Print numbers multiplied by 2
+
+const number = [1, 2, 3, 4, 5];
+number.forEach(num =>{
+    console.log(num*2);
+});
+
+
+// word length
+const words = ["JavaScript", "React", "Node", "MongoDB"];
+
+words.forEach(word => {
+    console.log(word + " - " + word.length);
+});
+
+const products = [
+    { name: "Laptop", price: 50000 },
+    { name: "Phone", price: 30000 },
+    { name: "Tablet", price: 20000 }
+];
+
+products.forEach(product => {
+    console.log(`Product: ${product.name}, Price: ${product.price}`);
+});
