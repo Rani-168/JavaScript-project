@@ -79,18 +79,18 @@
 
 
 // word length
-const words = ["JavaScript", "React", "Node", "MongoDB"];
+// const words = ["JavaScript", "React", "Node", "MongoDB"];
 
-words.forEach(word => {
-    console.log(word + " - " + word.length);
-});
+// words.forEach(word => {
+//     console.log(word + " - " + word.length);
+// });
 
-const products = [
-    { name: "Laptop", price: 50000 },
-    { name: "Phone", price: 30000 },
-    { name: "Tablet", price: 20000 }
-];
+// const products = [
+//     { name: "Laptop", price: 50000 },
+//     { name: "Phone", price: 30000 },
+//     { name: "Tablet", price: 20000 }
+// ];
 
-products.forEach(product => {
-    console.log(`Product: ${product.name}, Price: ${product.price}`);
-});
+// products.forEach(product => {
+//     console.log(`Product: ${product.name}, Price: ${product.price}`);
+// });
