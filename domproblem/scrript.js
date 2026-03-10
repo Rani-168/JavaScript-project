@@ -72,10 +72,10 @@
 
 //for each  Print numbers multiplied by 2
 
-const number = [1, 2, 3, 4, 5];
-number.forEach(num =>{
-    console.log(num*2);
-});
+// const number = [1, 2, 3, 4, 5];
+// number.forEach(num =>{
+//     console.log(num*2);
+// });
 
 
 // word length
