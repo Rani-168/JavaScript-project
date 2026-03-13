@@ -41,23 +41,23 @@
 
 
 
-// let person={
-//     userName :"Rani",
-//     age: 21,
+let person={
+    userName :"Rani",
+    age: 21,
 
-// } 
+} 
 
-// let person2={
-//     userName :"Ankita",
-//     age: 22,
+let person2={
+    userName :"Ankita",
+    age: 22,
 
-// } 
+} 
 
-// let newObject = {
-//     ...person, ...person2
-// }
+let newObject = {
+    ...person, ...person2
+}
 
-// console.log(newObject);
+console.log(newObject);
 
 
 
