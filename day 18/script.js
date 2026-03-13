@@ -24,15 +24,19 @@
       //fetch(api) 
      //
 
-    //  const promise = fetch("https://random.dog/woof.json");
-    //  promise
-    //  .then((data) => data.json())
-    // .then((actualData => {
-    //     // console.log(actualData)
-    //     console.log(actualData.url)
-    //     img.setAttributes
-    // }))
-    //  .catch((error => console.log(error)));
+     const promise = fetch("https://random.dog/woof.json");
+     promise
+     .then((data) => data.json())
+    .then((actualData => {
+        // console.log(actualData)
+        console.log(actualData.url)
+        img.setAttributes
+    }))
+     .catch((error => console.log(error)));
+
+
+
+     
 
     let button = document.querySelector("button")
     button.addEventListener("click", () =>{
