@@ -94,3 +94,19 @@
 // products.forEach(product => {
 //     console.log(`Product: ${product.name}, Price: ${product.price}`);
 // });
+
+
+
+
+
+
+let arr = [1, 3, 5, 7, 2, 4, 5, 9, 3];
+let sum =arr[0];
+for(let i=0; i<=arr.length; i++){
+    
+        if(arr[i] > sum) 
+            sum = arr[i];
+    
+}
+console.log(sum);
+
