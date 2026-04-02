@@ -48,65 +48,85 @@
 // }
 
 
-let marks = 40;
-if (marks >= 90) {
-    console.log("exlent marks");
-}else if (marks >= 80) {
-    console.log(" very good marks");
-}else if (marks >= 70) {
-    console.log("good marks");
-}else if (marks >= 60) {
-    console.log("average marks");
-}else if (marks >= 50) {
-    console.log("below average marks");
-}else if (marks >= (40)) {
-    console.log("pdhai kar le bhai");
-}else if (marks <= 40) {
-    console.log("pdhai chodo bhai");
-}
+// let marks = 40;
+// if (marks >= 90) {
+//     console.log("exlent marks");
+// }else if (marks >= 80) {
+//     console.log(" very good marks");
+// }else if (marks >= 70) {
+//     console.log("good marks");
+// }else if (marks >= 60) {
+//     console.log("average marks");
+// }else if (marks >= 50) {
+//     console.log("below average marks");
+// }else if (marks >= (40)) {
+//     console.log("pdhai kar le bhai");
+// }else if (marks <= 40) {
+//     console.log("pdhai chodo bhai");
+// }
 
-let number = 15;
-if ( number % 15 == 0) {
-    console.log("FizzBuzz");
-} 
- else if (number%3 ==0){
-    console.log("FIzz");
-}
-else if (number%5 ==0){
-    console.log("Buzz");
-} else{
-    console.log(number);
-}
+// let number = 15;
+// if ( number % 15 == 0) {
+//     console.log("FizzBuzz");
+// } 
+//  else if (number%3 ==0){
+//     console.log("FIzz");
+// }
+// else if (number%5 ==0){
+//     console.log("Buzz");
+// } else{
+//     console.log(number);
+// }
 
-// switch case statement // it uses triple equal to operator (===) for comparison
+// // switch case statement // it uses triple equal to operator (===) for comparison
 
-// switch(expression){
-//     case value1:
-//         // code to be executed if expression === value1
-//         break;
-//     case value2:
-//         // code to be executed if expression === value2
-//         break;
-//     ...
-//     default:
-//         // code to be executed if expression doesn't match any case
+// // switch(expression){
+// //     case value1:
+// //         // code to be executed if expression === value1
+// //         break;
+// //     case value2:
+// //         // code to be executed if expression === value2
+// //         break;
+// //     ...
+// //     default:
+// //         // code to be executed if expression doesn't match any case
+// // }
+
+
+// let day = 7;
+// switch (day) {
+
 // }
 
 
-let day = 7;
-switch (day) {
+// // truthly values and falsy values
+// // truthly values are values that are considered true in a boolean context
+// // falsy values are values that are considered false in a boolean context
 
+// // falsy values in javascript are
+// // 1. false
+// // 2. 0
+// // 3. "" (empty string)
+// // 4. null
+// // 5. undefined
+// // 6. NaN
+
+
+
+function maxChocolates(moneyChocolates, wrapperNeeded) {
+  let chocolates = moneyChocolates;
+  let wrappers = moneyChocolates;
+
+  while (wrappers >= wrapperNeeded) {
+    let extra = Math.floor(wrappers / wrapperNeeded);
+    
+    chocolates += extra;
+    
+    wrappers = extra + (wrappers % wrapperNeeded);
+  }
+
+  return chocolates;
 }
 
-
-// truthly values and falsy values
-// truthly values are values that are considered true in a boolean context
-// falsy values are values that are considered false in a boolean context
-
-// falsy values in javascript are
-// 1. false
-// 2. 0
-// 3. "" (empty string)
-// 4. null
-// 5. undefined
-// 6. NaN
+// Example:
+console.log(maxChocolates(100, 3)); // 149
