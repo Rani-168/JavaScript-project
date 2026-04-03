@@ -1,30 +1,107 @@
-public class Pattern {
+
+public class Reverse {
     public static void main(String[] args) {
 
-        int n = 5;
+        int a[] = {67, 25, 89, 12, 98, 12, 35, 61};
+        int n = a.length;
 
-        for (int i = 1; i <= n; i++) {
+        for(int i = 0; i < n / 2; i++) {
+            int temp = a[i];
+            a[i] = a[n - 1 - i];
+            a[n - 1 - i] = temp;
+        }
 
-            for (int j = 1; j <= n; j++) {
-                if (j == i) {
-                    System.out.print("#");
-                } else {
-                    System.out.print("*");
-                }
-            }
-
-            for (int j = 1; j <= n; j++) {
-                System.out.print(j);
-            }
-
-            for (int j = 1; j <= i; j++) {
-                System.out.print("Hello");
-            }
-
-            System.out.println();
+        System.out.println("Reversed Array:");
+        for(int i = 0; i < n; i++) {
+            System.out.print(a[i] + " ");
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// public class Reverse {
+//     public static void main(String[] args) {
+//         int arr[] = {67, 25, 89, 12, 98, 12, 35, 61};
+//         int start = 0;
+//         int end = arr.length - 1;
+
+//         System.out.println("Steps:");
+
+//         while (start < end) {
+//             int temp = arr[start];
+//             arr[start] = arr[end];
+//             arr[end] = temp;
+//             for (int num : arr) {
+//                 System.out.print(num + " ");
+//             }
+//             System.out.println();
+
+//             start++;
+//             end--;
+//         }
+
+//         System.out.println("\nFinal Reversed Array:");
+//         for (int num : arr) {
+//             System.out.print(num + " ");
+//         }
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+// public class Pattern {
+//     public static void main(String[] args) {
+
+//         int n = 5;
+
+//         for (int i = 1; i <= n; i++) {
+
+//             for (int j = 1; j <= n; j++) {
+//                 if (j == i) {
+//                     System.out.print("#");
+//                 } else {
+//                     System.out.print("*");
+//                 }
+//             }
+
+//             for (int j = 1; j <= n; j++) {
+//                 System.out.print(j);
+//             }
+
+
+//             for (int j = 1; j <= i; j++) {
+//                 System.out.print("Hello");
+//             }
+
+//             System.out.println();
+//         }
+//     }
+// }
 
 
 
