@@ -33,11 +33,11 @@
 // console.log(userName);
 
 
-// //spread operater:
-// let cities = ["pune", "goa"  ];
-// let cities2 =["nashik", "Arala"];
-// let newArray = [...cities, ...cities2, "delhi"];  //spread operater:
-// console.log(newArray);
+//spread operater:
+let cities = ["pune", "goa"  ];
+let cities2 =["nashik", "Arala"];
+let newArray = [...cities, ...cities2, "delhi"];  //spread operater:
+console.log(newArray);
 
 
 
