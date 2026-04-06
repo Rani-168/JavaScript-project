@@ -1,3 +1,72 @@
+public class SeriesProblems {
+    public static void main(String[] args) {
+
+        // 1) Next term: Squares
+        int n1 = 5;
+        System.out.println("Next term (Squares): " + (n1 * n1)); // 25
+
+        // 2) Custom series: 2,3,5,9,17
+        int term = 17;
+        int next = term * 2 - 1;
+        System.out.println("Next term: " + next); // 33
+
+
+        // 3) 15th term of AP: 2,5,8,...
+        int a = 2, d = 3, n = 15;
+        int ap15 = a + (n - 1) * d;
+        System.out.println("15th term of AP: " + ap15);
+
+
+        // 4) 20th term of AP: 7,10,13,...
+        a = 7; d = 3; n = 20;
+        int ap20 = a + (n - 1) * d;
+        System.out.println("20th term of AP: " + ap20);
+
+
+        // 5) Sum of first 25 terms: 1,4,7,...
+        a = 1; d = 3; n = 25;
+        int sum25 = n * (2 * a + (n - 1) * d) / 2;
+        System.out.println("Sum of 25 terms: " + sum25);
+
+
+        // 6) Sum of first 30 terms: 6,9,12,...
+        a = 6; d = 3; n = 30;
+        int sum30 = n * (2 * a + (n - 1) * d) / 2;
+        System.out.println("Sum of 30 terms: " + sum30);
+
+
+        // 7) Display AP: 11,15,19,... (first 10 terms)
+        a = 11; d = 4;
+        System.out.print("AP Series: ");
+        for (int i = 0; i < 10; i++) {
+            System.out.print((a + i * d) + " ");
+        }
+        System.out.println();
+
+
+        // 8) 12th term of GP: 3,6,12,...
+        int a_gp = 3, r = 2, n_gp = 12;
+        int gp12 = (int)(a_gp * Math.pow(r, n_gp - 1));
+        System.out.println("12th term of GP: " + gp12);
+
+
+        // 9) Common ratio of GP: 5,15,45,...
+        int first = 5, second = 15;
+        int ratio = second / first;
+        System.out.println("Common ratio: " + ratio);
+
+
+        // 10) 8th term of GP: 2,10,50,...
+        a_gp = 2; r = 5; n_gp = 8;
+        int gp8 = (int)(a_gp * Math.pow(r, n_gp - 1));
+        System.out.println("8th term of GP: " + gp8);
+    }
+}
+
+
+
+
+
 
 // public class Reverse {
 //     public static void main(String[] args) {
@@ -21,34 +90,34 @@
 
 
 
-public class Pattern {
-    public static void main(String[] args) {
+// public class Pattern {
+//     public static void main(String[] args) {
 
-        int n = 5;
+//         int n = 5;
 
-        for (int i = 1; i <= n; i++) {
+//         for (int i = 1; i <= n; i++) {
 
-            for (int j = 1; j <= n; j++) {
-                if (j == i) {
-                    System.out.print("#");
-                } else {
-                    System.out.print("*");
-                }
-            }
+//             for (int j = 1; j <= n; j++) {
+//                 if (j == i) {
+//                     System.out.print("#");
+//                 } else {
+//                     System.out.print("*");
+//                 }
+//             }
 
-            for (int j = 1; j <= n; j++) {
-                System.out.print(j);
-            }
+//             for (int j = 1; j <= n; j++) {
+//                 System.out.print(j);
+//             }
 
 
-            for (int j = 1; j <= i; j++) {
-                System.out.print("Hello");
-            }
+//             for (int j = 1; j <= i; j++) {
+//                 System.out.print("Hello");
+//             }
 
-            System.out.println();
-        }
-    }
-}
+//             System.out.println();
+//         }
+//     }
+// }
 
 
 
