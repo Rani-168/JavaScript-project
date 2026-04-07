@@ -380,7 +380,71 @@
 //     }
 // }
 
+public class Student {
 
+    // Method to check palindrome
+    public static boolean isPalindrome(int num) {
+        int original = num, rev = 0;
+        while (num > 0) {
+            int digit = num % 10;
+            rev = rev * 10 + digit;
+            num /= 10;
+        }
+        return original == rev;
+    }
+
+    // Method to check prime
+    public static boolean isPrime(int num) {
+        if (num <= 1) return false;
+        for (int i = 2; i <= num / 2; i++) {
+            if (num % i == 0) return false;
+        }
+        return true;
+    }
+
+    public static void main(String[] args) {
+
+        int a[] = {45, 254, 1, 131, 13, 25, 6};
+
+        int sum = 0;
+        int evenSum = 0;
+        int div5Sum = 0;
+        int primeCount = 0;
+        boolean palindromeFound = false;
+
+        for (int num : a) {
+
+            // a) total sum
+            sum += num;
+
+            // b) even sum
+            if (num % 2 == 0) {
+                evenSum += num;
+            }
+
+            // c) divisible by 5
+            if (num % 5 == 0) {
+                div5Sum += num;
+            }
+
+            // d) palindrome check
+            if (isPalindrome(num)) {
+                palindromeFound = true;
+            }
+
+            // e) prime count
+            if (isPrime(num)) {
+                primeCount++;
+            }
+        }
+
+        System.out.println("Total Sum = " + sum);
+        System.out.println("Even Sum = " + evenSum);
+        System.out.println("Sum Divisible by 5 = " + div5Sum);
+        System.out.println("Palindrome Present = " + palindromeFound);
+        System.out.println("Prime Count = " + primeCount);
+    }
+}
 
 
 
