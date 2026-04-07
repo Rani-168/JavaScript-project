@@ -73,32 +73,32 @@
 // }
 
 
-public class Student{
-    int sid;
-    String sname;
-    String scours;
-    String s_uni_name;
-    double scgpa;
-    public Student(){
+// public class Student{
+//     int sid;
+//     String sname;
+//     String scours;
+//     String s_uni_name;
+//     double scgpa;
+//     public Student(){
 
-    }
+//     }
 
-    public Student( int sid, String sname, String scours, String s_uni_name, double scgpa){
-    super();
-    this.sid= sid;
-    this.sname =sname;
-    this.scours = scours;
-    this.s_uni_name = s_uni_name;
-    this.scgpa = scgpa;  
-    }   
+//     public Student( int sid, String sname, String scours, String s_uni_name, double scgpa){
+//     super();
+//     this.sid= sid;
+//     this.sname =sname;
+//     this.scours = scours;
+//     this.s_uni_name = s_uni_name;
+//     this.scgpa = scgpa;  
+//     }   
 
-    @Override
-    public String toString() {
-        return "Student [sid=" + sid + ", sname=" + sname + ", scours=" + scours + ", s_uni_name=" + s_uni_name
-                + ", scgpa=" + scgpa + "]";
-    }
+//     @Override
+//     public String toString() {
+//         return "Student [sid=" + sid + ", sname=" + sname + ", scours=" + scours + ", s_uni_name=" + s_uni_name
+//                 + ", scgpa=" + scgpa + "]";
+//     }
 
-}
+// }
 
 
 // public class Reverse {
