@@ -64,27 +64,27 @@
 
 
 
-// // sum of digits
+// sum of digits
 
-// let num = 123456;
-// let sum = 0;
+let num = 123456;
+let sum = 0;
 
-// while(num > 0){
-//     sum += num% 10;
-//     num = Math.floor(num/10);
+while(num > 0){
+    sum += num% 10;
+    num = Math.floor(num/10);
 
-// }
-// console.log(sum);
+}
+console.log(sum);
 
-// function sumOfDigit(){
-//     let num = prompt("enter a number");
-//     let sum =0 ;
-//     while(num >0){
-//         sum += num%10;
-//         num = Math.floor(num/10);
-//     }
-//     alert(sum);
-// }
+function sumOfDigit(){
+    let num = prompt("enter a number");
+    let sum =0 ;
+    while(num >0){
+        sum += num%10;
+        num = Math.floor(num/10);
+    }
+    alert(sum);
+}
 
 // //Vowel Counter
 
