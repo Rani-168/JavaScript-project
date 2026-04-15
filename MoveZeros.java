@@ -444,7 +444,6 @@
 //         System.out.println("Palindrome Present = " + palindromeFound);
 //         System.out.println("Prime Count = " + primeCount);
 //     }
-// }
 
 
 
@@ -477,6 +476,36 @@ public class MoveZeros {
     }
 }
 
+
+
+// import java.util.*;
+
+// public class MoveZerosSwap {
+//     public static void main(String[] args) {
+
+//         int arr[] = {4, 5, 0, 1, 9, 0, 5, 0};
+//         int n = arr.length;
+
+//         int j = 0; // pointer for placing non-zero elements
+
+//         for(int i = 0; i < n; i++) {
+
+//             if(arr[i] != 0) {
+//                 // swap arr[i] with arr[j]
+//                 int temp = arr[i];
+//                 arr[i] = arr[j];
+//                 arr[j] = temp;
+
+//                 j++; // move j forward
+//             }
+//         }
+
+//         // print result
+//         for(int num : arr) {
+//             System.out.print(num + " ");
+//         }
+//     }
+// }
 
 
 
