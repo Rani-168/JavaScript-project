@@ -380,72 +380,102 @@
 //     }
 // }
 
-public class Student {
+// public class Student {
 
-    // Method to check palindrome
-    public static boolean isPalindrome(int num) {
-        int original = num, rev = 0;
-        while (num > 0) {
-            int digit = num % 10;
-            rev = rev * 10 + digit;
-            num /= 10;
-        }
-        return original == rev;
-    }
+//     // Method to check palindrome
+//     public static boolean isPalindrome(int num) {
+//         int original = num, rev = 0;
+//         while (num > 0) {
+//             int digit = num % 10;
+//             rev = rev * 10 + digit;
+//             num /= 10;
+//         }
+//         return original == rev;
+//     }
 
-    // Method to check prime
-    public static boolean isPrime(int num) {
-        if (num <= 1) return false;
-        for (int i = 2; i <= num / 2; i++) {
-            if (num % i == 0) return false;
-        }
-        return true;
-    }
+//     // Method to check prime
+//     public static boolean isPrime(int num) {
+//         if (num <= 1) return false;
+//         for (int i = 2; i <= num / 2; i++) {
+//             if (num % i == 0) return false;
+//         }
+//         return true;
+//     }
 
+//     public static void main(String[] args) {
+
+//         int a[] = {45, 254, 1, 131, 13, 25, 6};
+
+//         int sum = 0;
+//         int evenSum = 0;
+//         int div5Sum = 0;
+//         int primeCount = 0;
+//         boolean palindromeFound = false;
+
+//         for (int num : a) {
+
+//             // a) total sum
+//             sum += num;
+
+//             // b) even sum
+//             if (num % 2 == 0) {
+//                 evenSum += num;
+//             }
+
+//             // c) divisible by 5
+//             if (num % 5 == 0) {
+//                 div5Sum += num;
+//             }
+
+//             // d) palindrome check
+//             if (isPalindrome(num)) {
+//                 palindromeFound = true;
+//             }
+
+//             // e) prime count
+//             if (isPrime(num)) {
+//                 primeCount++;
+//             }
+//         }
+
+//         System.out.println("Total Sum = " + sum);
+//         System.out.println("Even Sum = " + evenSum);
+//         System.out.println("Sum Divisible by 5 = " + div5Sum);
+//         System.out.println("Palindrome Present = " + palindromeFound);
+//         System.out.println("Prime Count = " + primeCount);
+//     }
+// }
+
+
+
+
+public class MoveZeros {
     public static void main(String[] args) {
+        int arr[] = {4,5,0,1,9,0,5,0};
+        int n = arr.length;
 
-        int a[] = {45, 254, 1, 131, 13, 25, 6};
+        int index = 0;
 
-        int sum = 0;
-        int evenSum = 0;
-        int div5Sum = 0;
-        int primeCount = 0;
-        boolean palindromeFound = false;
-
-        for (int num : a) {
-
-            // a) total sum
-            sum += num;
-
-            // b) even sum
-            if (num % 2 == 0) {
-                evenSum += num;
-            }
-
-            // c) divisible by 5
-            if (num % 5 == 0) {
-                div5Sum += num;
-            }
-
-            // d) palindrome check
-            if (isPalindrome(num)) {
-                palindromeFound = true;
-            }
-
-            // e) prime count
-            if (isPrime(num)) {
-                primeCount++;
+        // Step 1: Move non-zero elements forward
+        for(int i = 0; i < n; i++) {
+            if(arr[i] != 0) {
+                arr[index] = arr[i];
+                index++;
             }
         }
 
-        System.out.println("Total Sum = " + sum);
-        System.out.println("Even Sum = " + evenSum);
-        System.out.println("Sum Divisible by 5 = " + div5Sum);
-        System.out.println("Palindrome Present = " + palindromeFound);
-        System.out.println("Prime Count = " + primeCount);
+        // Step 2: Fill remaining with zeros
+        while(index < n) {
+            arr[index] = 0;
+            index++;
+        }
+
+        // Print result
+        for(int num : arr) {
+            System.out.print(num + " ");
+        }
     }
 }
-
 
 
 
