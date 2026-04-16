@@ -535,16 +535,38 @@
 
 
 
-public class ToggleBits {
-    public static void main(String[] args) {
-        int n = 10;
-        int bit = (int)(Math.log(n) / Math.log(2)) +1;
-        int mask = (1 << bit) -1;
-        int result = n^mask;
-        System.out.println(result);
-    }
+// public class ToggleBits {
+//     public static void main(String[] args) {
+//         int n = 10;
+//         int bit = (int)(Math.log(n) / Math.log(2)) +1;
+//         int mask = (1 << bit) -1;
+//         int result = n^mask;
+//         System.out.println(result);
+//     }
 
+// }
+
+
+
+
+public class Swap{
+
+    public static void main(String[] args) {
+        int arr[]= {12, 34, 67, 19, 54};
+        int n = arr.length;
+        for(int i =0; i<n/2; i++){
+            int temp = arr[i];
+            arr[i] = arr[n-1-i];
+            arr[n-1-i]=temp;
+        }
+         for(int i = 0; i < n; i++){
+            System.out.print(arr[i] + " ");
+        }
+    }
 }
+
+
+
 
 
 
