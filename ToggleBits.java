@@ -448,37 +448,37 @@
 
 
 
-public class MoveZeros {
-    public static void main(String[] args) {
-        int arr[] = {4,5,0,1,9,0,5,0};
-        int n = arr.length;
+// public class MoveZeros {
+//     public static void main(String[] args) {
+//         int arr[] = {4,5,0,1,9,0,5,0};
+//         int n = arr.length;
 
-        int index = 0;
+//         int index = 0;
 
-        // Step 1: Move non-zero elements forward
-        for(int i = 0; i < n; i++) {
-            if(arr[i] != 0) {
-                arr[index] = arr[i];
-                index++;
-            }
-        }
+//         // Step 1: Move non-zero elements forward
+//         for(int i = 0; i < n; i++) {
+//             if(arr[i] != 0) {
+//                 arr[index] = arr[i];
+//                 index++;
+//             }
+//         }
 
-        // Step 2: Fill remaining with zeros
-        while(index < n) {
-            arr[index] = 0;
-            index++;
-        }
+//         // Step 2: Fill remaining with zeros
+//         while(index < n) {
+//             arr[index] = 0;
+//             index++;
+//         }
 
-        // Print result
-        for(int num : arr) {
-            System.out.print(num + " ");
-        }
-    }
-}
+//         // Print result
+//         for(int num : arr) {
+//             System.out.print(num + " ");
+//         }
+//     }
+// }
 
 
 
-// import java.util.*;
+ // import java.util.*;
 
 // public class MoveZerosSwap {
 //     public static void main(String[] args) {
@@ -507,6 +507,44 @@ public class MoveZeros {
 //     }
 // }
 
+// public class MoveZero{
+//     public static void main(String[] args) {
+//         int arr[]= {1, 4, 6,0,5,8,0,2};
+//         int n = arr.length;
+//         int j= 0;
+//         for(int i= 0; i<n; i++){
+//             if(arr[i]!=0){
+//                int temp = arr[i];
+//                arr[i] = arr[j];
+//                arr[j]= temp;
+
+//                j++;
+
+
+
+//             }
+//         }
+    
+
+//         for(int num : arr){
+//             System.out.print(num + " ");
+//         }
+//     }
+// }
+
+
+
+
+public class ToggleBits {
+    public static void main(String[] args) {
+        int n = 10;
+        int bit = (int)(Math.log(n) / Math.log(2)) +1;
+        int mask = (1 << bit) -1;
+        int result = n^mask;
+        System.out.println(result);
+    }
+
+}
 
 
 
