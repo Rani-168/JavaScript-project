@@ -585,29 +585,51 @@
 
 
 
-public class SecondLargestnum{
-    public static void main(String[] args) {
-        int a[] = {2, 4, 7, 9, 14};
+// public class SecondLargestnum{
+//     public static void main(String[] args) {
+//         int a[] = {2, 4, 7, 9, 14};
 
-        int largest = a[0];
+//         int largest = a[0];
 
-        for (int i = 1; i < a.length; i++) {
-            if (a[i] > largest) {
-                largest = a[i];
+//         for (int i = 1; i < a.length; i++) {
+//             if (a[i] > largest) {
+//                 largest = a[i];
                 
-            }
-        }
-        int secondLargest = a[0];
-        for (int i = 0; i < a.length; i++) {
-            if (a[i] != largest && a[i] > secondLargest) {
-                secondLargest = a[i];
-            }
-        }
+//             }
+//         }
+//         int secondLargest = a[0];
+//         for (int i = 0; i < a.length; i++) {
+//             if (a[i] != largest && a[i] > secondLargest) {
+//                 secondLargest = a[i];
+//             }
+//         }
 
-        System.out.println("Second Largest: " + secondLargest);
-    }
+//         System.out.println("Second Largest: " + secondLargest);
+//     }
+// }
+
+
+public class ScoundMinimumnum {
+       public static void main(String[] args) {
+    	   int a[]= {2, 8, 3, 1, 10};
+    	   int minimum = a[0];
+    	   for(int i=0; i<a.length; i++) {
+    		   if(a[i]<minimum) {
+    			   minimum = a[i];
+    			   
+    		   }
+    	   }
+    	   
+    	   int Scoundminimum = a[0];
+    	   for(int i=0; i<a.length; i++) {
+    		   if(a[i]!=minimum && a[i]<Scoundminimum) {
+    			   Scoundminimum = a[i];
+    			   
+    		   }
+    	   }
+    	   System.out.print(Scoundminimum);
+       }
 }
-
 
 
 
