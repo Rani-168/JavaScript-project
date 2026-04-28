@@ -568,20 +568,46 @@
 
 
 
-public class Swa{
-	 public static void main(String[] args) {
+// public class Swa{
+// 	 public static void main(String[] args) {
 	        
 	       
-	        for (int i = 0; i < 2; i++) {
-	            System.out.println("# " + "# " + "# " + "* " + "*");
-	        }
+// 	        for (int i = 0; i < 2; i++) {
+// 	            System.out.println("# " + "# " + "# " + "* " + "*");
+// 	        }
 
 	       
-	        for (int i = 0; i < 3; i++) {
-	            System.out.println("@ " + "@ " + "@ " + "* " + "*");
-	        }
-	    }
+// 	        for (int i = 0; i < 3; i++) {
+// 	            System.out.println("@ " + "@ " + "@ " + "* " + "*");
+// 	        }
+// 	    }
+// }
+
+
+
+public class SecondLargestnum{
+    public static void main(String[] args) {
+        int a[] = {2, 4, 7, 9, 14};
+
+        int largest = a[0];
+
+        for (int i = 1; i < a.length; i++) {
+            if (a[i] > largest) {
+                largest = a[i];
+                
+            }
+        }
+        int secondLargest = a[0];
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] != largest && a[i] > secondLargest) {
+                secondLargest = a[i];
+            }
+        }
+
+        System.out.println("Second Largest: " + secondLargest);
+    }
 }
+
 
 
 
