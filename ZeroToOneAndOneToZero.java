@@ -665,35 +665,55 @@
 // }
 
 
-import java.util.*;
-public class MixPattern {
+// import java.util.*;
+// public class MixPattern {
 
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt();
-		int a[] = new int[n];
-		for(int i=0; i<n; i++){
-			a[i]=sc.nextInt();
-		}
-		int count =0;
-		for(int i=0; i<n; i++){
-			if(a[i]!=0){
-              a[count++] = a[i];
-			}
+// 	public static void main(String[] args) {
+// 		Scanner sc = new Scanner(System.in);
+// 		int n = sc.nextInt();
+// 		int a[] = new int[n];
+// 		for(int i=0; i<n; i++){
+// 			a[i]=sc.nextInt();
+// 		}
+// 		int count =0;
+// 		for(int i=0; i<n; i++){
+// 			if(a[i]!=0){
+//               a[count++] = a[i];
+// 			}
 			
 
+// 		}
+
+// 		for(int i=count; i<n; i++){
+// 			a[i]= 0;
+// 		}
+
+// 		for(int i=0; i<n; i++){
+// 			System.out.print(a[i]+" ");
+// 		}
+// 	}
+// }
+
+
+
+import java.util.*;
+public class ZeroToOneAndOneToZero {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+		String bin = "";
+		while (n!=0) {
+			bin = (n & 1) +bin;
+			n = n>>1;
 		}
 
-		for(int i=count; i<n; i++){
-			a[i]= 0;
-		}
-
-		for(int i=0; i<n; i++){
-			System.out.print(a[i]+" ");
-		}
+		bin = bin.replaceAll("1" , "2");
+		bin = bin.replaceAll("0" , "1");
+		bin = bin.replaceAll("2" , "0");
+		 int res = Integer.parseInt(bin, 2);
+        System.out.print(res);
 	}
 }
-
 
 
 
