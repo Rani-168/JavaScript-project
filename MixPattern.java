@@ -633,37 +633,66 @@
 
 
 
-public class MixPattern {
-	 public static void main(String[] args) {
-	        int n = 3;
-	       for(int i=1; i<=n ; i++) {
+// public class MixPattern {
+// 	 public static void main(String[] args) {
+// 	        int n = 3;
+// 	       for(int i=1; i<=n ; i++) {
 	    	   
-	        for (int j = 1; j <= 3*i; j++) {
-	            System.out.print("@ ");
-	        }
-	        int spaces = (n - i) * 3;
-            for (int s = 1; s <= spaces; s++) {
-                System.out.print("  ");
-            }
+// 	        for (int j = 1; j <= 3*i; j++) {
+// 	            System.out.print("@ ");
+// 	        }
+// 	        int spaces = (n - i) * 3;
+//             for (int s = 1; s <= spaces; s++) {
+//                 System.out.print("  ");
+//             }
 
             
-	        System.out.print("\t");
+// 	        System.out.print("\t");
 	       
-	        for (int j = 1; j <=i; j++) {
-	            System.out.print( j +" ");
-	        }
+// 	        for (int j = 1; j <=i; j++) {
+// 	            System.out.print( j +" ");
+// 	        }
 	        
-	        System.out.print("\t");
+// 	        System.out.print("\t");
 	        
-	        for (int j = 1; j <= i; j++) {
-	            System.out.print( "Hello ");
-	        }
-	        System.out.println();
-	       } 
+// 	        for (int j = 1; j <= i; j++) {
+// 	            System.out.print( "Hello ");
+// 	        }
+// 	        System.out.println();
+// 	       } 
 	       
-	    }
-}
+// 	    }
+// }
 
+
+import java.util.*;
+public class MixPattern {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int a[] = new int[n];
+		for(int i=0; i<n; i++){
+			a[i]=sc.nextInt();
+		}
+		int count =0;
+		for(int i=0; i<n; i++){
+			if(a[i]!=0){
+              a[count++] = a[i];
+			}
+			
+
+		}
+
+		for(int i=count; i<n; i++){
+			a[i]= 0;
+		}
+
+		for(int i=0; i<n; i++){
+			System.out.print(a[i]+" ");
+		}
+	}
+}
 
 
 
