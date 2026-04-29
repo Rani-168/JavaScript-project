@@ -609,26 +609,59 @@
 // }
 
 
-public class ScoundMinimumnum {
-       public static void main(String[] args) {
-    	   int a[]= {2, 8, 3, 1, 10};
-    	   int minimum = a[0];
-    	   for(int i=0; i<a.length; i++) {
-    		   if(a[i]<minimum) {
-    			   minimum = a[i];
+// public class ScoundMinimumnum {
+//        public static void main(String[] args) {
+//     	   int a[]= {2, 8, 3, 1, 10};
+//     	   int minimum = a[0];
+//     	   for(int i=0; i<a.length; i++) {
+//     		   if(a[i]<minimum) {
+//     			   minimum = a[i];
     			   
-    		   }
-    	   }
+//     		   }
+//     	   }
     	   
-    	   int Scoundminimum = a[0];
-    	   for(int i=0; i<a.length; i++) {
-    		   if(a[i]!=minimum && a[i]<Scoundminimum) {
-    			   Scoundminimum = a[i];
+//     	   int Scoundminimum = a[0];
+//     	   for(int i=0; i<a.length; i++) {
+//     		   if(a[i]!=minimum && a[i]<Scoundminimum) {
+//     			   Scoundminimum = a[i];
     			   
-    		   }
-    	   }
-    	   System.out.print(Scoundminimum);
-       }
+//     		   }
+//     	   }
+//     	   System.out.print(Scoundminimum);
+//        }
+// }
+
+
+
+public class MixPattern {
+	 public static void main(String[] args) {
+	        int n = 3;
+	       for(int i=1; i<=n ; i++) {
+	    	   
+	        for (int j = 1; j <= 3*i; j++) {
+	            System.out.print("@ ");
+	        }
+	        int spaces = (n - i) * 3;
+            for (int s = 1; s <= spaces; s++) {
+                System.out.print("  ");
+            }
+
+            
+	        System.out.print("\t");
+	       
+	        for (int j = 1; j <=i; j++) {
+	            System.out.print( j +" ");
+	        }
+	        
+	        System.out.print("\t");
+	        
+	        for (int j = 1; j <= i; j++) {
+	            System.out.print( "Hello ");
+	        }
+	        System.out.println();
+	       } 
+	       
+	    }
 }
 
 
