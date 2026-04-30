@@ -696,24 +696,43 @@
 
 
 
-import java.util.*;
-public class ZeroToOneAndOneToZero {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-		String bin = "";
-		while (n!=0) {
-			bin = (n & 1) +bin;
-			n = n>>1;
+// import java.util.*;
+// public class ZeroToOneAndOneToZero {
+// 	public static void main(String[] args) {
+// 		Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+// 		String bin = "";
+// 		while (n!=0) {
+// 			bin = (n & 1) +bin;
+// 			n = n>>1;
+// 		}
+
+// 		bin = bin.replaceAll("1" , "2");
+// 		bin = bin.replaceAll("0" , "1");
+// 		bin = bin.replaceAll("2" , "0");
+// 		 int res = Integer.parseInt(bin, 2);
+//         System.out.print(res);
+// 	}
+// }
+
+
+import java.util.Scanner;
+
+public class PrintNumAlternating{
+		public static void main(String[] args) {
+	        Scanner sc = new Scanner(System.in);
+	        int n = sc.nextInt();
+	      
+	        for(int i=1; i<=n; i++) {
+	        	  if(i%2 == 0) {
+	        		  System.out.print(-i + " ");
+	        	  }else {
+	        		  System.out.print(i + " ");
+	        	  }
+	        }
+	        
+	        
 		}
-
-		bin = bin.replaceAll("1" , "2");
-		bin = bin.replaceAll("0" , "1");
-		bin = bin.replaceAll("2" , "0");
-		 int res = Integer.parseInt(bin, 2);
-        System.out.print(res);
-	}
 }
-
 
 
